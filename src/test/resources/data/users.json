@@ -1,0 +1,15 @@
+{
+   "tester1": {
+    "login": "tester1",
+    "password": "12345"
+  },
+  "dev1": {
+    "login": "dev1",
+    "password": "qwerty"
+  },
+  "lead1": {
+    "login": "lead1",
+    "password": "navalny"
+  }
+
+}

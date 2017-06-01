@@ -1,0 +1,19 @@
+{
+
+  "tester1_issue":{
+
+    "category": "[All Projects] General",
+    "reproducibility": "always",
+    "severity": "block",
+    "priority": "urgent",
+    "assign_to": "dev1",
+    "summary": "тема ",
+    "description": "описание ",
+    "steps_to_reproduce": "Шаги по воспроизведению ",
+    "additional_info": "дополнительные сведения ",
+    "platform" : "domain",
+    "os": "os",
+    "osVersion": "version"
+  }
+
+}
