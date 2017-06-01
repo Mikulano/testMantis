@@ -1,6 +1,6 @@
 node {
  
-  	git url: 'https://github.com/sergusha/bddmantis.git', branch: 'master'
+  	git url: 'https://github.com/mikulano/mantis.git', branch: 'master'
   	sh "mvn clean test"
   	step([$class: 'CucumberReportPublisher',
         	failedFeaturesNumber: 0,
