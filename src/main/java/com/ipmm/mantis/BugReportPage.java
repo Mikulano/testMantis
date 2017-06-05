@@ -51,6 +51,9 @@ public class BugReportPage {
     @FindBy(id = "os_build")
     WebElement os_version_field;
 
+    @FindBy(id = "profile_closed")
+    WebElement profile_closed;
+
 
     public void fillFields(BugForm bug) {
 
@@ -60,10 +63,15 @@ public class BugReportPage {
         new Select(priority).selectByVisibleText(bug.getPriority());
         new Select(assign_to).selectByVisibleText(bug.getAssign_to());
 
-        try {
+        /*try {
             open_platform_btn.click(); //throws if not visible
         } catch (ElementNotVisibleException ignored) {}
+        */
 
+        if (profile_closed.getAttribute("style").equals(""))
+        {
+            open_platform_btn.click();
+        }
         platform.sendKeys(bug.getPlatform());
         os_field.sendKeys(bug.getOs());
         os_version_field.sendKeys(bug.getOsVersion());
